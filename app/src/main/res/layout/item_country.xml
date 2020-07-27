@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d80"
+        android:layout_marginStart="@dimen/d4"
+        android:layout_marginTop="@dimen/d4"
+        android:layout_marginEnd="@dimen/d4"
+        android:background="@drawable/shap_background_country_item"
+        android:orientation="horizontal"
+        android:padding="@dimen/d2">
+
+        <ImageView
+            android:id="@+id/item_country_imv_country_image"
+            android:layout_width="@dimen/d60"
+            android:layout_height="@dimen/d60"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/d8"
+            android:padding="@dimen/d2"
+            android:src="@drawable/ic_ae" />
+
+        <TextView
+            android:id="@+id/item_country_txt_country_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/d4"
+            android:fontFamily="@font/cairo"
+            android:padding="@dimen/d2"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_30sp" />
+
+    </LinearLayout>
+</layout>

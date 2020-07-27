@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/fragment_view_news_spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d50"
+                android:layout_margin="@dimen/d8"
+                android:background="@drawable/shap_gray" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_view_news_rcv_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/d8" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_view_news_tv_no_results_or_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_25sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>
